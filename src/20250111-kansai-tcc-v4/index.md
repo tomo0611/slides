@@ -23,6 +23,8 @@ author: 大井 智弘 / tomo0611.dev
 
 <img src="https://omusp.jp/wp-content/uploads/2024/10/profile-ot.png" class="profile-icon" width="90px" height="90px" />
 
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
+
 ### 大井 智弘（大阪公立大学 工学部・情報工学科3年）
 
 <br />
@@ -42,7 +44,7 @@ author: 大井 智弘 / tomo0611.dev
 - [コンピューターハウスランダム](https://ch-random.net/) 部長
 - 大学の情シスでシステム開発のアルバイト
 - SecHack365 '24 (NICT)に参加中
-- [tomo0611.dev](https://tomo0611.dev)
+- 先ほどお話しされた阿多先生の研究室所属
 
 ---
 
@@ -57,6 +59,9 @@ author: 大井 智弘 / tomo0611.dev
 - Webアプリ、バックエンド開発
 - ネイティブアプリ(Kotlin)開発
 - アプリケーション解析
+
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
+
 ---
 
 # 目次
@@ -66,9 +71,12 @@ author: 大井 智弘 / tomo0611.dev
 3. 実際の通信フローを見てみる
 4. Scopesについて
 5. PKCEについて
-6. OAuth2.0とOpenID Connectの違い
-7. まとめ
+6. Refresh Tokenについて
+7. OpenID Connect Discovery について
+8. OAuth2.0とOpenID Connectの違い
+9. まとめ
 
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
 
 ---
 
@@ -79,6 +87,9 @@ author: 大井 智弘 / tomo0611.dev
 - スライド作成は今朝の10時半から書き始めました。やばいです。出来上がるのでしょうか
 - あとパワポ脱却を目指して今回Markdownという形式で書いてます、凝ったものは作れなさそう
 - なので、クオリティはご容赦ください。
+
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
+
 ---
 
 # 1. スマートシティって何なんでしょうね？
@@ -86,6 +97,8 @@ author: 大井 智弘 / tomo0611.dev
 年齢は？性別は？彼氏/彼女はいるの？
 
 調べてみました
+
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
 
 ---
 
@@ -100,6 +113,8 @@ img[alt~="center"] {
 
 ![w:640 center](https://www8.cao.go.jp/cstp/society5_0/smartcity/img/smartcity_image.png)
 
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
+
 ---
 
 # 1. スマートシティとは
@@ -108,10 +123,11 @@ img[alt~="center"] {
 
 難しいこと言ってるんで要約しましょう。
 
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
+
 > > > 1. [政府の施策におけるスマートシティの定義 (内閣府 Society 5.0より)](https://www8.cao.go.jp/cstp/society5_0/smartcity/index.html)
 
 ---
-
 
 # 1. スマートシティとは (ざっくり)
 
@@ -145,6 +161,8 @@ img[alt~="center"] {
     <img src="images/oauth-docomo_login.png" alt="NTT Docomo Login">
 </div>
 
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
+
 ---
 
 # 2. OAuth2.0って何？
@@ -155,11 +173,15 @@ img[alt~="center"] {
 
 > > > 【注意】OAuth2.0のimplicit grant flowを使って認証(Authentication)をしてはいけない
 
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
+
 ---
 
 # 実際に見てみる
 
 百聞は一見に如かず。見てみるのが早い。
+
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
 
 ---
 
@@ -185,6 +207,8 @@ img[alt~="center"] {
     <img src="images/oauth-line_login.png" alt="Line Login">
 </div>
 
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
+
 ---
 
 # その前に用語の整理だけ
@@ -192,6 +216,8 @@ img[alt~="center"] {
 ユーザー : ログインをしようとしている人 (ぼく)
 クライアント : ログインを受け付ける側のアプリケーション (Line Music)
 認可サーバー : ユーザーの認可を受け付けるサーバー (Line)
+
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
 
 ---
 
@@ -203,6 +229,8 @@ img[alt~="center"] {
 4. https://music.line.me/login/callback?code=bbbb&state=zzz
 5. ログイン完了
 
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
+
 ---
 
 
@@ -213,6 +241,8 @@ img[alt~="center"] {
 3. https://api.line.me/oauth2/v2.1/token (Tokenエンドポイント) に code, client_id, client_secret, redirect_uri を送信し、Access Tokenを取得
 4. Authorization: Bearer {access_token} をヘッダに付与し、https://api.line.me/oauth2/v2.1/userinfo にアクセスしてユーザー情報を取得
 5. ログイントークンを発行し、ログイン状態を保持させる
+
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
 
 --- 
 # Scopesについて
@@ -239,6 +269,8 @@ Lineの場合は`profile openid email`の3つが指定できます。
 Google Driveだと、`https://www.googleapis.com/auth/drive.file`などを指定することで情報を取得することができます。$^2$
 
 これは元のProviderによって異なるのでドキュメント要参照です。
+
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
 
 >>> 1. [スコープ | Line Developers](https://developers.line.biz/ja/docs/line-login/integrate-line-login/#scopes)
 >>> 2. [Choose Google Drive API scopes | Google Drive](https://developers.google.com/drive/api/guides/api-specific-auth)
@@ -288,7 +320,38 @@ Access Tokenは有効期限(大体3600秒)がありますが、Refresh Tokenを�
 
 ---
 
-# openid-configurationについて
+# OpenID Connect Discovery について
+
+先ほど、ログインするために飛ばすリンクがあったりリクエストを送ればTokenやユーザー情報が取れるという話でしたが、どこにおくればいいんでしょうか？
+ClientIDとSecret, Redirect URIまで指定しているのに、3つもリンクを設定しないといけないのでしょうか？
+
+そのOpenIDプロバイダーの発行者識別子(issuer)に /.well-known/openid-configuration を付けた URL に HTTP GET リクエストを投げることで、当該 OpenID プロバイダーの情報を取得することができます。
+
+例1: https://accounts.google.com/.well-known/openid-configuration
+
+例2: https://access.line.me/.well-known/openid-configuration
+
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
+
+---
+
+# OpenID Connect Discovery について (例)
+
+```json
+{
+    "issuer": "https://access.line.me",
+    "authorization_endpoint": "https://access.line.me/oauth2/v2.1/authorize",
+    "token_endpoint": "https://api.line.me/oauth2/v2.1/token",
+    "revocation_endpoint": "https://api.line.me/oauth2/v2.1/revoke",
+    "userinfo_endpoint": "https://api.line.me/oauth2/v2.1/userinfo",
+    "scopes_supported": ["openid", "profile", "email"],
+    "jwks_uri": "https://api.line.me/oauth2/v2.1/certs",
+    "response_types_supported": ["code"],
+    "subject_types_supported": ["pairwise"],
+    "id_token_signing_alg_values_supported": ["ES256"],
+    "code_challenge_methods_supported": ["S256"]
+}
+```
 
 ---
 
@@ -332,6 +395,7 @@ Access Tokenは有効期限(大体3600秒)がありますが、Refresh Tokenを�
 - OpenID Connectは認証のためのプロトコル
 - OpenID ConnectはOAuth2.0をベースにしている
 
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
 
 ---
 
@@ -341,8 +405,10 @@ Access Tokenは有効期限(大体3600秒)がありますが、Refresh Tokenを�
 - OAuth2.0 (OIDC) は認可プロトコルで、サイトへのログインなど様々な場所で使われている。
 - スコープというアクセス範囲の指定でデータ連携をセキュアに行っている。
 - PKCEという攻撃者の窃取防止の機能がある
-- スマートシティでは、①データ連携基盤の普及$^1$などにおいて、アクセス制御はより一層重要になっており、個の設計の考え方を応用できるのでは？
+- スマートシティでは、①データ連携基盤の普及$^1$などにおいて、アクセス制御はより一層重要になっており、この設計の考え方を応用できるのでは？
 
 ご清聴ありがとうございました :pray:
+
+<img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250111-kansai-tcc-v4/">
 
 >>> 1. [政府の施策におけるスマートシティの定義 (内閣府 Society 5.0)のスマートシティの実現イメージの①](https://www8.cao.go.jp/cstp/society5_0/smartcity/index.html)
