@@ -1,0 +1,135 @@
+/* @theme tomo0611 */
+
+@import 'default';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+JP&display=swap');
+
+h1 {
+    color: #5b5b5b;
+    border-bottom: 4px solid var(--omusp-primary);
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+img+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    color: var(--tomo0611-main);
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+h3 {
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+p,
+ul,
+ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+pre,
+blockquote {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+li+li,
+li>ul {
+    margin-top: 0.4rem;
+}
+
+li::marker {
+    color: var(--tomo0611-gray);
+}
+
+section::after {
+    content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+}
+
+.col2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.col3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.col2>* {
+    margin: 0;
+}
+
+:root {
+    --tomo0611-main: oklch(0.6 0.08 245);
+    --tomo0611-accent: oklch(0.75 0.12 245);
+    --tomo0611-accent2: oklch(0.75 0.12 185);
+    --tomo0611-white: #f9f9f9;
+    --tomo0611-gray: oklch(0.55 0.04 245);
+    --tomo0611-black: oklch(0.39 0.03 245);
+    --omusp-primary: #84A2D4;
+}
+
+section {
+    font-family: 'Noto Sans JP', sans-serif;
+    --fontStack-monospace: 'JetBrains Mono', monospace;
+    font-weight: 500;
+
+    background-color: var(--tomo0611-white);
+
+    --fgColor-accent: var(--tomo0611-main);
+    --fgColor-default: var(--tomo0611-black);
+    --fgColor-muted: var(--tomo0611-gray);
+    --header-footer-color: var(--tomo0611-gray);
+    --paginate-color: var(--tomo0611-gray);
+}
+
+strong {
+    font-weight: 700;
+}
+
+pre {
+    font-size: 0.7rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+img {
+    background: none !important;
+}
+
+.qrcode {
+    display: block;
+    position: absolute;
+    right: 32px;
+    bottom: 70px;
+}
+
+blockquote>blockquote>blockquote {
+    font-size: 50%;
+    font-weight: 400;
+    padding: 0;
+    padding-top: 0.25rem;
+    margin: 0;
+    border: 0;
+    border-top: 0.01rem solid var(--tomo0611-gray);
+    position: absolute;
+    width: 800px;
+    bottom: 80px;
+    left: 80px;
+
+    &>ol>li {
+        margin-top: 0;
+    }
+}
