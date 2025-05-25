@@ -7,7 +7,7 @@ footer: 2025/5/25 (Sun) | ランダム友好祭LT
 header: 'あなたは大学を卒業できますか？ ～卒業判定機を作る～ (教育課程と学位)'
 title: あなたは大学を卒業できますか？ ～卒業判定機を作る～ (教育課程と学位) | tomo0611
 description: 2025/5/25 (Sun) | ランダム友好祭LT
-author: 大井 智弘 / tomo0611.dev
+author: tomo0611 / tomo0611.dev
 style: div.mermaid { all: unset; }
 ---
 
@@ -22,11 +22,11 @@ style: div.mermaid { all: unset; }
   }
 </style>
 
-<img src="https://omusp.jp/wp-content/uploads/2024/10/profile-ot.png" class="profile-icon" width="90px" height="90px" />
+<img src="https://pbs.twimg.com/profile_images/1901114568539344896/bgV22N22_400x400.jpg" class="profile-icon" width="90px" height="90px" />
 
 <img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=5685ad&bgcolor=fff&qzone=4&data=https://slides.tomo0611.dev/20250525-chrand-yuukousai/">
 
-### 大井 智弘（大阪公立大学 工学部・情報工学科4年）
+### tomo0611（大阪公立大学 工学部・情報工学科4年）
 
 <br />
 
@@ -36,15 +36,15 @@ style: div.mermaid { all: unset; }
 
 # 自己紹介
 
-![bg 90% right:40%](https://omusp.jp/wp-content/uploads/2024/10/profile-ot.png)
+![bg 90% right:40%](https://pbs.twimg.com/profile_images/1901114568539344896/bgV22N22_400x400.jpg)
 
-## 大井 智弘 / tomo0611.dev
+## tomo0611 / tomo0611.dev
 
 - 大阪公立大学 工学部 情報工学科 4年
 - 21 y.o.
 - [コンピューターハウスランダム](https://ch-random.net/) 前部長
 - 大学の情シス(情報基盤課)でアルバイト
-- 情報基盤センターの阿多先生の研究室所属
+- 情報基盤センター長(阿多先生)の研究室所属
 - SecHack365の社会実装ゼミ 優秀修了
 
 ---
