@@ -19,6 +19,7 @@ style: div.mermaid { all: unset; }
     float: left;
     margin-right: 16px;
     margin-top: 12px;
+    border-radius: 50%;
   }
 </style>
 
@@ -51,7 +52,7 @@ style: div.mermaid { all: unset; }
 
 # 自己紹介
 
-![bg 90% right:40%](https://omusp.jp/wp-content/uploads/2024/10/profile-ot.png)
+![bg 90% right:40%](https://pbs.twimg.com/profile_images/1901114568539344896/bgV22N22_400x400.jpg)
 
 ## 好きなこと / 趣味など
 
