@@ -86,7 +86,7 @@ Karl Wiegers と Joy Beatty による Software Requirements, 3rd Edition では�
 
 時間割や掲示板の通知など様々な機能があり、App Store では教育カテゴリで 2 位を獲得しました。
 
-![bg right:40% w:400](/20251005-yamaguchi-lighting-talk/Screenshot_20251005-123102.png)
+![bg right:40% w:400](/20251005-yamaguchi-lighting-talk/screenshot_01.png)
 
 ---
 
@@ -108,7 +108,7 @@ Karl Wiegers と Joy Beatty による Software Requirements, 3rd Edition では�
 Discord でもちょこちょこ開発状況を出していますが、
 Kotlin (+ Jetpack Compose) でネイティブアプリを開発しています。
 
-![w:380](/20251005-yamaguchi-lighting-talk/Screenshot.png)
+![w:380](/20251005-yamaguchi-lighting-talk/screenshot_02.png)
 
 <sup>© 日向夏・イマジカインフォス／「薬屋のひとりごと」製作委員会</sup>
 
